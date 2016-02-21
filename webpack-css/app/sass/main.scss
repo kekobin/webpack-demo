@@ -1,0 +1,17 @@
+html,body,div,header,footer{
+  margin:0;
+  padding:0;
+}
+
+.content{
+  text-align: center;
+  width:1000px;
+  height:500px;
+  background: red;
+  header,footer{
+    color:#fff;
+    height: 50px;
+    line-height: 50px;
+    background: green;
+  }
+}

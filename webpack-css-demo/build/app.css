@@ -1,0 +1,10 @@
+html {
+  font-family: sans-serif; }
+.header {
+  font-weight: bold; }
+.u-clearfix {
+  overflow: hidden; }
+.footer {
+  font-style: italic; }
+.container {
+  background: #f00; }

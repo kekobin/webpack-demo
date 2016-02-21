@@ -1,0 +1,32 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "A demo for learning webpack step by step",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kekobin/webpack-demo.git"
+  },
+  "author": "kekobin@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kekobin/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/kekobin/webpack-demo#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.1",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
