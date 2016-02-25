@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var config = {
@@ -25,7 +26,10 @@ var config = {
     path: path.join(__dirname, './build')
   },
   plugins: [
-    new ExtractTextPlugin("css/styles.css")
+    new ExtractTextPlugin("css/styles.css"),
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true
+    })
   ]
 }
 
