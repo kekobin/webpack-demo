@@ -12,12 +12,17 @@ var config = {
     }, {
       test: /\.scss$/,
       loader: ExtractTextPlugin.extract('style', 'css!sass')
+    }, {
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      loaders: [
+        "url-loader?limit=5000&name=../img/img-[hash:6].[ext]",
+        'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
+      ]
     }]
   },
   output: {
     filename: 'app.js',
-    path: path.join(__dirname, './build'),
-    publicPath: '/build'
+    path: path.join(__dirname, './build')
   },
   plugins: [
     new ExtractTextPlugin("css/styles.css")
